@@ -1,0 +1,198 @@
+* {
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      body {
+        overflow-x: hidden;
+      }
+      
+      .name{
+              
+        font-size: 22px;
+        margin: 0px;
+        padding-left: 25px;
+        position: absolute;
+        top: 5px;
+        color: #a05344;
+        font-family: 'Ruthie', cursive;
+      font-size: 50px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      }
+      
+      .nav {
+        width: 100%;
+        line-height: 9vh;
+        height: 9vh;
+        background-color: #f5b78dd2;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      ul {
+        float: right;
+        margin-right: 90px;
+      }
+      
+      ul li {
+        list-style-type: none;
+        display: inline-block;
+        transition: 0.9s all;
+      }
+      
+      li a {
+        text-decoration: none;
+        text-decoration: none;
+        color: rgb(221, 52, 52);
+        font-size: 22px;
+        font-weight: bold;
+        padding: 19px;
+        margin: 0px;
+        text-transform: uppercase;
+      }
+      
+      ul li a:hover, .active a {
+        color: brown;
+        background-color: rgba(222, 184, 135, 0.795);
+      }
+      
+      .container1 {
+        background-color: rgba(218, 165, 32, 0.986);
+        height: 700px;
+        width: 100%;
+      }
+      
+      .pic1 {
+        height: 500px;
+        width: 750px;
+        background-image: url("/images/inn1.jpg");
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 160px;
+        left: 650px;
+      }
+      
+      .content1 {
+        height: 280px;
+        width: 620px;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 250px;
+        left: 90px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 25px;
+        padding-bottom: 10px;
+      }
+      
+      .heading1 {
+        font-size: 40px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Noto Serif', serif;
+      }
+      
+      .para1 {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.6;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 20px;
+      }
+      
+      .container2 {
+        background-color: rgba(128, 128, 128, 0.897);
+        height: 710px;
+        width: 100%;
+        margin-top: 0px;
+        position: relative;
+      }
+      
+      .pic2 {
+        height: 510px;
+        width: 750px;
+        background-image: url("/images/food.jpeg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        top: 100px;
+        left: 120px;
+      }
+      
+      .content2 {
+        height: 320px;
+        width: 600px;
+        background-color: whitesmoke;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: absolute;
+        bottom: 160px;
+        left: 820px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+      
+      .heading2 {
+        line-height: 1.5;
+        font-size: 40px;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Noto Serif', serif;
+      }
+      
+      .para2 {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.6;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 10px;
+      }
+      
+      .foot {
+        background-color: #f0f0f0;
+        height: 40px;
+        width: 98%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 35px;
+        padding-right: 0px;
+        border-top: 0.1px solid rgba(20, 20, 20, 0.212);
+      }
+      
+      .fa {
+        margin-right: 3px;
+        padding: 10px;
+        font-size: 15px;
+        width: 14px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        border: solid 1.8px black;
+        justify-items: left;
+      }
+      
+      .fa-facebook {
+        background: black;
+        color: white;
+      }
+      
+      .fa-twitter {
+        background: black;
+        color: white;
+      }
+      
+      .fa-instagram {
+        background: black;
+        color: white;
+      }
+      
+      .fa:hover {
+        opacity: 0.3;
+      }
+      

@@ -1,0 +1,200 @@
+* {
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      body {
+        overflow-x: hidden;
+        background-image: url("/images/p1.jpg");
+        background-size: cover;
+      }
+      
+      .title {
+        color: #a05344;
+        font-family: 'Ruthie', cursive;
+      }
+      
+      .name {
+        font-size: 22px;
+        margin: 0px;
+        padding-left: 25px;
+        position: absolute;
+        top: 5px;
+        color: #a05344;
+        font-family: 'Ruthie', cursive;
+        font-size: 50px;
+        font-weight: normal;
+        letter-spacing: 2px;
+      }
+      
+      .nav {
+        width: 100%;
+        line-height: 9vh;
+        height: 9vh;
+        background-color: #f5b78dd2;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      ul {
+        float: right;
+        margin-right: 90px;
+      }
+      
+      ul li {
+        list-style-type: none;
+        display: inline-block;
+        transition: 0.9s all;
+      }
+      
+      li a {
+        text-decoration: none;
+        color: rgb(221, 52, 52);
+        font-size: 22px;
+        font-weight: bold;
+        padding: 19px;
+        margin: 0px;
+        text-transform: uppercase;
+      }
+      
+      ul li a:hover, .active a {
+        color: brown;
+        background-color: rgba(222, 184, 135, 0.795);
+      }
+      
+      .heading {
+        font-size: 42px;
+        line-height: 1.9;
+        margin: 8px;
+        text-align: center;
+      }
+      
+      .border {
+        padding: 10px;
+        margin: 8px;
+        width: 360px;
+        height: 24px;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        color: grey;
+      }
+      
+
+      #contact {
+        margin-bottom: 50px;
+        margin-left: 100px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding-top: 10px;
+        width: 500px;
+        height: 875px;
+        background-color: #d8cbbbfb;
+      }
+      
+      .container {
+        border: none;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 0px;
+      }
+      
+      
+      .msg {
+        padding: 11px;
+        width: 358px;
+        height: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin: 8px;
+        outline: none;
+        border: none;
+      }
+      
+      .button {
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        width: 180px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        color: brown;
+        background-color: #cb9b42f3;
+      }
+      
+      .button:hover {
+        font-size: 23px;
+        color: rgb(131, 118, 92);
+        background-color: #e4b765fa;
+      }
+      
+      .select {
+        padding: 8px;
+        margin: 8px;
+        width: 381px;
+        height: 45px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: grey;
+      }
+      
+      .content {
+        width: 370px;
+        margin: 12px;
+        font-size: 16px;
+      }
+      
+      .checkbox {
+        margin: 9px;
+      }
+      
+      .condition {
+        font-size: 16px;
+      }
+      
+      .foot {
+        background-color: #f0f0f0;
+        height: 40px;
+        width: 98%;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 35px;
+        padding-right: 0px;
+        border-top: 0.1px solid rgba(20, 20, 20, 0.212);
+      }
+      
+      .fa {
+        margin-right: 3px;
+        padding: 10px;
+        font-size: 15px;
+        width: 14px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        border: solid 1.8px black;
+        justify-items: left;
+      }
+      
+      .fa-facebook {
+        background: black;
+        color: white;
+      }
+      
+      .fa-twitter {
+        background: black;
+        color: white;
+      }
+      
+      .fa-instagram {
+        background: black;
+        color: white;
+      }
+      
+      .fa:hover {
+        opacity: 0.3;
+      }
+      
