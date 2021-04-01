@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\userController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,21 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/about', function () {
-    return view('About');
-});
-Route::get('/contact', function () {
-    return view('Contact');
-});
-Route::get('/menu', function () {
-    return view('Menu');
-});
-Route::get('/gallery', function () {
-    return view('Gallery');
-});
-Route::get('/reservation', function () {
-    return view('Reservation');
-});
+Route::get('/',[ userController::class,'home']);
+
+Route::get('/about',[userController::class,'about']);
+
+Route::get('/contact',[userController::class,'contact']);
+
+Route::get('/menu',[userController::class,'menu']);
+Route::get('/gallery',[userController::class,'gallery']);
+
+Route::get('/reservation',[userController::class,'reservation']);
