@@ -27,14 +27,26 @@
     <div class="container">
       <p class="heading"> Reserve a table, ask for today's special or just send <br> us a message.</p>
 
-      <form action="/contact" >
+      <form action="/contact" method="POST">
       @csrf
         <p><input class="border" type="text" placeholder="Name" name="Name">
+        @error('Name')
+       <div class="alert" >
+       {{$message}}</div>
+       @enderror
     </p>
         <p><input class="border" type="email" placeholder="Email" name="Email">
+        @error('Email')
+       <div class="alert" >
+       {{$message}}</div>
+       @enderror
         </p>
         <p><input class="border" type="text" placeholder="Phone Number " name="Phone">
-       </p>
+        @error('Phone')
+       <div class="alert" >
+       {{$message}}</div>
+       @enderror
+        </p>
         <p><input class="border" type="number" placeholder="How many people" name="People"></p>
         <p><input class="border" type="datetime-local" placeholder="Date" name="Date" value="2020-10-24T20:00"></p>
         <p><textarea class="msg border" placeholder="Message \ Special requirements" name="Msg" rows="40" cols="20"></textarea></p>

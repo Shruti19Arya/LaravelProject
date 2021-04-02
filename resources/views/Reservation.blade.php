@@ -31,16 +31,38 @@
 
     <div class="container">
 
-      <form action="/reservation" >
-       </p>
+      <form action="/reservation" method="POST">
+      @csrf
+        <p><input class="border" type="text" placeholder="Name" name="Name">
+        @error('Name')
+        <div class="alert">
+        {{$message}}</div>
+        @enderror
+        </p>
         <p><input class="border" type="email" placeholder="Email" name="Email">
-       </p>
+        @error('Email')
+        <div class="alert">
+        {{$message}}</div>
+        @enderror
+        </p>
         <p><input class="border" type="text" placeholder="Phone Number " name="Phone">
-       </p>
+        @error('Phone')
+        <div class="alert" >
+        {{$message}}</div>
+        @enderror
+        </p>
         <p><input class="border" type="number" placeholder="How many people" name="People">
-       </p>
+        @error('People')
+        <div class="alert" >
+        {{$message}}</div>
+        @enderror
+      </p>
         <p><input class="border" type="datetime-local" placeholder="Datetime" name="Datetime">
-         </p>
+        @error('DateTime')
+        <div class="alert" >
+        {{$message}}</div>
+        @enderror
+      </p>
         <p><select class="select" name="Table">
             <option>Select Table</option>
             <option value="Open Table">Open Table</option>
@@ -61,7 +83,12 @@
         <p class="condition"><input type="checkbox" name="checkbox" class="checkbox">I
           understand the Terms and Conditions
           
-         </p>
+          @error('checkbox')
+        <div class="alert" >
+        {{$message}}</div>
+        @enderror
+
+        </p>
 
 
 
