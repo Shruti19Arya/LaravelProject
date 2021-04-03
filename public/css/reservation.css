@@ -79,6 +79,14 @@
         color: grey;
       }
       
+      .alert{
+        font-size: 14px;
+        font-weight:unset;
+        color:rgb(133, 70, 25);
+        position: relative;
+      left: 12px;
+      }
+
       #contact {
         margin-bottom: 50px;
         margin-left: 100px;

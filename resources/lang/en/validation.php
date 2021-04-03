@@ -104,9 +104,6 @@ return [
     'required_with_all' => 'The :attribute field is required when :values are present.',
     'required_without' => 'The :attribute field is required when :values is not present.',
     'required_without_all' => 'The :attribute field is required when none of :values are present.',
-    'prohibited' => 'The :attribute field is prohibited.',
-    'prohibited_if' => 'The :attribute field is prohibited when :other is :value.',
-    'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
     'same' => 'The :attribute and :other must match.',
     'size' => [
         'numeric' => 'The :attribute must be :size.',
@@ -134,10 +131,35 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        
+        'Name' => [
+            'required' => 'Name cannot be Left Blank',
+
         ],
+        'Email' => [
+            'required' => 'Email cannot be Left Blank',
+            'email' => 'Please Enter a valid email address',
+
+        ],
+
+        'Phone' => [
+            'required' => 'Phone cannot be Left Blank',
+            'digits' => 'Phone Number should not be less than 10 digits',
+        ],
+
+        'DateTime' => [
+            'required' => 'Date and Time cannot be left blank',
+        ],
+        'People' => [
+            'required' => 'Please Select Number of People',
+        ],
+        'checkbox' => [
+            'required' => 'Please agree to the Terms and Conditions first',
+        ],
+
+
     ],
+
 
     /*
     |--------------------------------------------------------------------------
