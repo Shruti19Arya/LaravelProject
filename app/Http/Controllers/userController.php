@@ -24,4 +24,9 @@ class userController extends Controller
     
         function reservation() {
         return view('Reservation');}
+
+        function sign() {
+            return view('Signup');}
+
+        
 }

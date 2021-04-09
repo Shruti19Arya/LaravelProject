@@ -14,8 +14,10 @@
         <li><a href="/about" >About us</a></li>
         <li><a href="/contact" >Contact us</a></li>
         <li><a href="/gallery" target="_blank">Gallery</a></li>
-        <li><a href="menu" target="_blank" >MENU</a></li>
+        <li><a href="/menu" target="_blank" >MENU</a></li>
         <li><a href="/reservation" >RESERVATION</a></li>
+        <li><a href="/sign" >Sign up</a></li>
+
       </ul>
 
     </div>

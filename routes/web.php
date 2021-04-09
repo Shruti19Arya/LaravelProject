@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\userController;
 use App\Http\Controllers\contactController;
 use App\Http\Controllers\reserveController;
+use App\Http\Controllers\signcontroller;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +30,6 @@ Route::get('/gallery',[userController::class,'gallery']);
 
 Route::get('/reservation',[reserveController::class,'reserve']);
 Route::post('/reservation',[reserveController::class,'register']);
+
+Route::get('/sign',[signcontroller::class,'sign']);
+Route::post('/sign',[signcontroller::class,'post']);

@@ -22,7 +22,7 @@ class reserveController extends Controller
         $People= $request -> People;
 
         $request -> validate(['Name'=> 'required ','Email'=> 'required | email ',
-        'Phone'=> 'required| digits:10','DateTime'=> 'required ','People'=> 'required ',
+        'Phone'=> 'required| digits:10','Datetime'=> 'required ','People'=> 'required ',
         'checkbox'=> 'required ']);
         return view('about');
 

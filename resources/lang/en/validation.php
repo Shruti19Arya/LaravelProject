@@ -146,8 +146,12 @@ return [
             'required' => 'Phone cannot be Left Blank',
             'digits' => 'Phone Number should not be less than 10 digits',
         ],
+        
+        'Password' => [
+            'required' => 'Password cannot be Left Blank',
+        ],
 
-        'DateTime' => [
+        'Datetime' => [
             'required' => 'Date and Time cannot be left blank',
         ],
         'People' => [
@@ -155,6 +159,9 @@ return [
         ],
         'checkbox' => [
             'required' => 'Please agree to the Terms and Conditions first',
+        ],
+        'profile' => [
+            'required' => 'Please choose the profile pic',
         ],
 
 
