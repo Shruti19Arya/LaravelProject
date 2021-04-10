@@ -29,26 +29,27 @@
 
       <form action="/contact" method="POST">
       @csrf
-        <p><input class="border" type="text" placeholder="Name" name="Name">
+        <p><input class="border" type="text" placeholder="Name" name="Name" value="{{ old('Name') }}">
         @error('Name')
        <div class="alert" >
        {{$message}}</div>
        @enderror
     </p>
-        <p><input class="border" type="email" placeholder="Email" name="Email">
+        <p><input class="border" type="email" placeholder="Email" name="Email" value="{{ old('Email') }}">
         @error('Email')
        <div class="alert" >
        {{$message}}</div>
        @enderror
         </p>
-        <p><input class="border" type="text" placeholder="Phone Number " name="Phone">
+        <p><input class="border" type="text" placeholder="Phone Number " name="Phone" value="{{ old('Phone') }}">
         @error('Phone')
        <div class="alert" >
        {{$message}}</div>
        @enderror
         </p>
-        <p><input class="border" type="number" placeholder="How many people" name="People"></p>
-        <p><input class="border" type="datetime-local" placeholder="Date" name="Date" value="2020-10-24T20:00"></p>
+        <p><input class="border" type="number" placeholder="How many people" name="People" value="{{ old('People') }}">
+        </p>
+        <p><input class="border" type="datetime-local" placeholder="Date" name="Datetime" value="{{ old('Datetime') }}"></p>
         <p><textarea class="msg border" placeholder="Message \ Special requirements" name="Msg" rows="40" cols="20"></textarea></p>
         <p><button class="button" type="submit">SUBMIT </button></p>
       </form>

@@ -33,37 +33,37 @@
 
       <form action="/reservation" method="POST">
       @csrf
-        <p><input class="border" type="text" placeholder="Name" name="Name">
+        <p><input class="border" type="text" placeholder="Name" name="Name" value="{{ old('Name') }}">
         @error('Name')
         <div class="alert">
         {{$message}}</div>
         @enderror
         </p>
-        <p><input class="border" type="email" placeholder="Email" name="Email">
+        <p><input class="border" type="email" placeholder="Email" name="Email" value="{{ old('Email') }}">
         @error('Email')
         <div class="alert">
         {{$message}}</div>
         @enderror
         </p>
-        <p><input class="border" type="text" placeholder="Phone Number " name="Phone">
+        <p><input class="border" type="text" placeholder="Phone Number " name="Phone" value="{{ old('Phone') }}">
         @error('Phone')
         <div class="alert" >
         {{$message}}</div>
         @enderror
         </p>
-        <p><input class="border" type="number" placeholder="How many people" name="People">
+        <p><input class="border" type="number" placeholder="How many people" name="People" value="{{ old('People') }}">
         @error('People')
         <div class="alert" >
         {{$message}}</div>
         @enderror
       </p>
-        <p><input class="border" type="datetime-local" placeholder="Datetime" name="Datetime">
+        <p><input class="border" type="datetime-local" placeholder="Datetime" name="Datetime" value="{{ old('Datetime') }}">
         @error('DateTime')
         <div class="alert" >
         {{$message}}</div>
         @enderror
       </p>
-        <p><select class="select" name="Table">
+        <p><select class="select" name="Table" >
             <option>Select Table</option>
             <option value="Open Table">Open Table</option>
             <option value="Standard Table">Standard Table</option>
@@ -71,7 +71,7 @@
             
           
       </p>
-        <p><textarea class="msg border" placeholder="Message \ Special requirements" name="Msg" rows="40" cols="20"></textarea></p>
+        <p><textarea class="msg border" placeholder="Message \ Special requirements" name="Msg" rows="40" cols="20" ></textarea></p>
         <p class="content">
           <strong>
             Important dining information - </strong>

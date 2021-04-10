@@ -10,13 +10,14 @@
     <div class="nav">
 
       <ul>
-        <li><a href="/" >Home</a> </li>
-        <li><a href="/about" >About us</a></li>
-        <li><a href="/contact" >Contact us</a></li>
-        <li><a href="/gallery" target="_blank">Gallery</a></li>
-        <li><a href="/menu" target="_blank" >MENU</a></li>
-        <li><a href="/reservation" >RESERVATION</a></li>
-        <li><a href="/sign" >Sign up</a></li>
+
+      <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="/" >Home</a> </li>
+        <li class="{{ (request()->is('about')) ? 'active' : '' }}"><a href="/about" >About us</a></li>
+        <li class="{{ (request()->is('contact')) ? 'active' : '' }}"><a href="/contact" >Contact us</a></li>
+        <li class="{{ (request()->is('gallery')) ? 'active' : '' }}"><a href="/gallery" target="_blank">Gallery</a></li>
+        <li class="{{ (request()->is('menu')) ? 'active' : '' }}"><a href="/menu" target="_blank" >MENU</a></li>
+        <li class="{{ (request()->is('reservation')) ? 'active' : '' }}"><a href="/reservation" >RESERVATION</a></li>
+        <li class="{{ (request()->is('sign')) ? 'active' : '' }}"><a href="/sign" >Sign up</a></li>
 
       </ul>
 

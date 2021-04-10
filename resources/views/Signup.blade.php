@@ -34,19 +34,19 @@
       <form action="/sign" method="POST" enctype="multipart/form-data">
       @csrf
       
-        <p><input class="border" type="text" placeholder="Name" name="Name">
+        <p><input class="border" type="text" placeholder="Name" name="Name" value="{{ old('Name') }}">
         @error('Name')
        <div class="alert" >
        {{$message}}</div>
        @enderror
         </p>
-        <p><input class="border" type="email" placeholder="Email" name="Email">
+        <p><input class="border" type="email" placeholder="Email" name="Email" value="{{ old('Email') }}">
         @error('Email')
        <div class="alert" >
        {{$message}}</div>
        @enderror
         </p>
-        <p><input class="border" type="password" placeholder="Password" name="Password">
+        <p><input class="border" type="password" placeholder="Password" name="Password" value="{{ old('Password') }}">
         @error('Password')
        <div class="alert" >
        {{$message}}</div>
