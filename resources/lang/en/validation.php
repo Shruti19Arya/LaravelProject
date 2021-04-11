@@ -154,7 +154,7 @@ return [
             'required' => 'Please Confirm the Password ',
         ],
 
-        'DateTime' => [
+        'Datetime' => [
             'required' => 'Date and Time cannot be left blank',
         ],
         'People' => [
