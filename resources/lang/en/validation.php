@@ -148,10 +148,13 @@ return [
         ],
         
         'Password' => [
-            'required' => 'Password cannot be Left Blank',
+            'required' => 'Please fill the Password ',
+        ],
+        'Password2' => [
+            'required' => 'Please Confirm the Password ',
         ],
 
-        'Datetime' => [
+        'DateTime' => [
             'required' => 'Date and Time cannot be left blank',
         ],
         'People' => [

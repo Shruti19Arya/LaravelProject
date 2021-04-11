@@ -19,7 +19,7 @@ class signcontroller extends Controller
         $email= $request -> Email;
         
         $request -> validate(['Name'=> 'required ','Email'=> 'required | email ',
-        'profile'=>'required | file| mimes:jpg,jpeg,png','Password'=> 'required']);
+        'profile'=>'required | file| mimes:jpg,jpeg,png','Password'=> 'required','Password2'=> 'required']);
         $extension = $request -> file('profile')-> extension();
 
         return view('menu');

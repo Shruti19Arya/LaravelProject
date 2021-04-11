@@ -32,4 +32,5 @@ Route::get('/reservation',[reserveController::class,'reserve']);
 Route::post('/reservation',[reserveController::class,'register']);
 
 Route::get('/sign',[signcontroller::class,'sign']);
-Route::post('/sign',[signcontroller::class,'post']);
+Route::post('/sign',[signcontroller::class,'post'])
+->Middleware('pass');

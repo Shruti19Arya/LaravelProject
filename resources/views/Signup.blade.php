@@ -3,7 +3,7 @@
 
 <head>
 
-@section('title','Sign Up')
+@section('title','Reservation')
 <link rel="icon" href="/images/logo.png">
 
 
@@ -34,24 +34,31 @@
       <form action="/sign" method="POST" enctype="multipart/form-data">
       @csrf
       
-        <p><input class="border" type="text" placeholder="Name" name="Name" value="{{ old('Name') }}">
+        <p><input class="border" type="text" placeholder="Name" name="Name">
         @error('Name')
        <div class="alert" >
        {{$message}}</div>
        @enderror
         </p>
-        <p><input class="border" type="email" placeholder="Email" name="Email" value="{{ old('Email') }}">
+        <p><input class="border" type="email" placeholder="Email" name="Email">
         @error('Email')
        <div class="alert" >
        {{$message}}</div>
        @enderror
         </p>
-        <p><input class="border" type="password" placeholder="Password" name="Password" value="{{ old('Password') }}">
+        <p><input class="border" type="password" placeholder="Password" name="Password">
         @error('Password')
        <div class="alert" >
        {{$message}}</div>
        @enderror
         </p>
+        <p><input class="border" type="password" placeholder="Confirm Password" name="Password2">
+        @error('Password2')
+       <div class="alert" >
+       {{$message}}</div>
+       @enderror
+        </p>
+        
         
 
         <input class="border" type="file" name="profile" id="file" >
